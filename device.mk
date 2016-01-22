@@ -114,6 +114,11 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
 	camera.omap3
 
++# BBBAndroid - Bluetooth
++PRODUCT_PACKAGES += \
+        bluetooth.default \
+        Bluetooth
+
 # BBBAndroid - Additional external packages
 PRODUCT_PACKAGES += \
         i2c-tools \
