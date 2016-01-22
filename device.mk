@@ -30,6 +30,20 @@ PRODUCT_COPY_FILES := \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
     $(LOCAL_PATH)/ti-tsc.idc:system/usr/idc/ti-tsc.idc
+    
+# usb
+PRODUCT_COPY_FILES += \
+    frameworks/native/data/etc/android.hardware.usb.accessory.xml:system/etc/permissions/android.hardware.usb.accessory.xml \
+    frameworks/native/data/etc/android.hardware.usb.host.xml:system/etc/permissions/android.hardware.usb.host.xml
+    
+#Bluetooth
+PRODUCT_COPY_FILES += \
+	frameworks/native/data/etc/android.hardware.bluetooth.xml:system/etc/permissions/android.hardware.bluetooth.xml \
+	frameworks/native/data/etc/android.hardware.bluetooth_le.xml:system/etc/permissions/android.hardware.bluetooth_le.xml
+	
+# Bluetooth configuration file
+#PRODUCT_COPY_FILES += \
+#    system/bluetooth/data/main.nonsmartphone.conf:system/etc/bluetooth/main.conf    
 
 # BBBAndroid - Since the users keep asking for GPIO key mappings for the
 # various LCDs (which enumerate in a variety of values), I'm just going
